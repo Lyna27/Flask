@@ -7,7 +7,7 @@ app = Flask(__name__) # instance of a flask web application
 
 @app.route('/') #adding a root with a path "/" that means that page, so that flask knows where the page is going
 def home():  #Creating a page called home
-	return "Hello this is the main page <h1>Hello<h1>" #HTML fonctionne meme en codant en python !
+	return "Hello this is the main page <h1>Hello</h1>" #HTML fonctionne meme en codant en python !
 
 #creating another app
 @app.route("/<name>") #en ajoutant /... à l'URL on obtiendra Hello ... ! ; <name> est un parametre
