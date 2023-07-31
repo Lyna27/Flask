@@ -19,5 +19,10 @@ def admin():
 	return redirect(url_for("home")) #it redirect us to the home page 
 	#Now whenever we visit "https.../admin" we will be redirected home
 
+@app.route("/help")
+def help():
+	return redirect(url_for("user", name="I'm learning how to use Flask"))
+	#Whenever we visit "https.../help" we will be redirected to the user page, with name ="..." as a parameter
+
 if __name__=="__main__":
 	app.run() #running the app
