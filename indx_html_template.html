@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+</head>
+<body>
+	<h1>This is the Home Page !! </h1>
+	<p>{{content}}</p>
+	<p>{{r}}</p>
+	{% for x in range(10) %}
+        {% if x %2 == 1 : %}
+        	<p>{{x}}</p>  
+        {% else %}
+            <p>{{x}} is even</p>
+        {% endif %}
+    {% endfor %}
+
+    {% for x in var %}
+    	<p>{{x}}</p>
+    {% endfor %}
+</body>
+</html>
