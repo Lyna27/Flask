@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/<name>') 
 def home(name): 
-	return render_template("index.html", content=name,r=2) #render_template fonction parametrée qui permet d'afficher la page html avec
+	return render_template("index.html", content=name,r=2) #render_template fonction parametrée qui permet d'afficher la page html
 
 
 @app.route('/list') 
